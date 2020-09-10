@@ -81,7 +81,7 @@ public class Homework {
         String userName = scanner1.nextLine();
         String passwordPrompt = "Please enter password:";
         System.out.println(passwordPrompt);
-        String password = "Password123!";
+        String password = "P!";
         boolean indicator = false;
         while (indicator == false){
             String userPassword = scanner1.nextLine();
@@ -123,13 +123,14 @@ public class Homework {
         Write a while loop that prints only even numbers from 10 - 0 but once the loop gets to 5 break out of the loop*/
         int x = 10;
         System.out.println("--- Answer #5 ---");
-        while (x <= 10){
+        while (x >= 0){
             if(x==5) {
                 break;
-            }
-            System.out.println(x);
+            }//end of if
+            else if(x % 2 == 0){
+            System.out.println(x);}//end of else if
             x--;
-        }
+        }//End of while loop.
 
         /*6) Create a program that scans for a student's number grade number prints a student's letter grade based on the following conditions:
         if a student's grade is between 90 and 100 then print you got an A
